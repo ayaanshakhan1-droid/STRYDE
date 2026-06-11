@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRYDE – Premium Performance Shoes</title>
+  <meta name="description" content="STRYDE – Premium performance shoes. Run faster. Look better. Feel unstoppable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header id="navbar">
+  <nav class="nav-container">
+    <a href="#" class="logo">STRYDE</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#hero" class="mob-link">Home</a></li>
+    <li><a href="#products" class="mob-link">Products</a></li>
+    <li><a href="#features" class="mob-link">Features</a></li>
+    <li><a href="#gallery" class="mob-link">Gallery</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+  <div class="hero-bg-video">
+    <video autoplay muted loop playsinline>
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">New Season 2025</span>
+    <h1 class="hero-title">MOVE<br><span class="outline-text">WITHOUT</span><br>LIMITS</h1>
+    <p class="hero-sub">Premium performance shoes built for champions.<br>Run faster. Look better. Feel unstoppable.</p>
+    <div class="hero-cta">
+      <a href="#products" class="btn-primary">Shop Collection</a>
+      <a href="#features" class="btn-ghost">Discover More</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Customers</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Shoe Models</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Average Rating</span></div>
+    </div>
+  </div>
+  <div class="hero-shoe-img">
+    <img src="images/shoe1.jpg" alt="Featured Shoe" class="floating-shoe">
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span>AIR RUNNER</span><span>·</span>
+    <span>URBAN FLEX</span><span>·</span>
+    <span>STREET X</span><span>·</span>
+    <span>CLOUD STEP</span><span>·</span>
+    <span>APEX PRO</span><span>·</span>
+    <span>NIGHT RIDER</span><span>·</span>
+    <span>AIR RUNNER</span><span>·</span>
+    <span>URBAN FLEX</span><span>·</span>
+    <span>STREET X</span><span>·</span>
+    <span>CLOUD STEP</span><span>·</span>
+    <span>APEX PRO</span><span>·</span>
+    <span>NIGHT RIDER</span><span>·</span>
+  </div>
+</div>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="products section">
+  <div class="section-header">
+    <span class="section-label">Collection</span>
+    <h2 class="section-title">Featured Shoes</h2>
+    <p class="section-sub">Handpicked for performance, style, and comfort.</p>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="running">Running</button>
+    <button class="filter-btn" data-filter="casual">Casual</button>
+    <button class="filter-btn" data-filter="sport">Sport</button>
+  </div>
+
+  <div class="product-grid">
+
+    <div class="card" data-category="running">
+      <div class="card-badge">Best Seller</div>
+      <div class="card-img-wrap">
+        <img src="images/shoe1.jpg" alt="Air Runner">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Air Runner" data-price="4999">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Running</span>
+          <div class="card-rating">★★★★★ <span>(128)</span></div>
+        </div>
+        <h3>Air Runner</h3>
+        <div class="card-footer">
+          <span class="price">₹4,999</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="casual">
+      <div class="card-img-wrap">
+        <img src="images/shoe2.jpg" alt="Urban Flex">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Urban Flex" data-price="5499">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Casual</span>
+          <div class="card-rating">★★★★☆ <span>(94)</span></div>
+        </div>
+        <h3>Urban Flex</h3>
+        <div class="card-footer">
+          <span class="price">₹5,499</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="sport">
+      <div class="card-badge new-badge">New</div>
+      <div class="card-img-wrap">
+        <img src="images/shoe3.jpg" alt="Street X">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Street X" data-price="6299">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Sport</span>
+          <div class="card-rating">★★★★★ <span>(210)</span></div>
+        </div>
+        <h3>Street X</h3>
+        <div class="card-footer">
+          <span class="price">₹6,299</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="running">
+      <div class="card-img-wrap">
+        <img src="images/shoe4.jpg" alt="Cloud Step">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Cloud Step" data-price="5999">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Running</span>
+          <div class="card-rating">★★★★☆ <span>(67)</span></div>
+        </div>
+        <h3>Cloud Step</h3>
+        <div class="card-footer">
+          <span class="price">₹5,999</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="casual">
+      <div class="card-img-wrap">
+        <img src="images/shoe5.jpg" alt="Apex Pro">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Apex Pro" data-price="7499">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Casual</span>
+          <div class="card-rating">★★★★★ <span>(183)</span></div>
+        </div>
+        <h3>Apex Pro</h3>
+        <div class="card-footer">
+          <span class="price">₹7,499</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="sport">
+      <div class="card-img-wrap">
+        <img src="images/shoe6.jpg" alt="Night Rider">
+        <div class="card-overlay">
+          <button class="quick-add" data-name="Night Rider" data-price="6799">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-cat">Sport</span>
+          <div class="card-rating">★★★★☆ <span>(52)</span></div>
+        </div>
+        <h3>Night Rider</h3>
+        <div class="card-footer">
+          <span class="price">₹6,799</span>
+          <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section id="features" class="features section">
+  <div class="features-inner">
+    <div class="features-text">
+      <span class="section-label">Why STRYDE</span>
+      <h2 class="section-title">Built Different.<br>Made to Last.</h2>
+      <p>Every STRYDE shoe is engineered with premium materials and tested under real conditions so you never have to compromise.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon">🏃</div>
+          <div>
+            <h4>Ultra-Light Foam</h4>
+            <p>30% lighter than standard soles. Feel every stride, not the shoe.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💧</div>
+          <div>
+            <h4>Waterproof Upper</h4>
+            <p>Sealed breathable mesh keeps you dry in any weather.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <div>
+            <h4>Energy Return Tech</h4>
+            <p>Responsive cushioning that converts impact into forward momentum.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">♻️</div>
+          <div>
+            <h4>Eco Materials</h4>
+            <p>60% recycled content. Better for you, better for the planet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-media">
+      <video autoplay muted loop playsinline class="features-video">
+        <source src="video/video1.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO SHOWCASE ===== -->
+<section class="video-showcase section">
+  <div class="section-header">
+    <span class="section-label">In Action</span>
+    <h2 class="section-title">See Them Move</h2>
+  </div>
+  <div class="video-grid">
+    <div class="video-item big">
+      <video autoplay muted loop playsinline>
+        <source src="video/video2.mp4" type="video/mp4">
+      </video>
+      <div class="video-label">Air Runner – Trail Edition</div>
+    </div>
+    <div class="video-col">
+      <div class="video-item">
+        <video autoplay muted loop playsinline>
+          <source src="video/video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-label">Urban Flex – City Run</div>
+      </div>
+      <div class="video-item">
+        <video autoplay muted loop playsinline>
+          <source src="video/video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-label">Street X – Sprint Mode</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="gallery section">
+  <div class="section-header">
+    <span class="section-label">Gallery</span>
+    <h2 class="section-title">Style Every Way</h2>
+  </div>
+  <div class="gallery-grid">
+    <img src="images/shoe1.jpg" alt="Gallery 1" class="gallery-img">
+    <img src="images/shoe2.jpg" alt="Gallery 2" class="gallery-img">
+    <img src="images/shoe3.jpg" alt="Gallery 3" class="gallery-img">
+    <img src="images/shoe4.jpg" alt="Gallery 4" class="gallery-img">
+    <img src="images/shoe5.jpg" alt="Gallery 5" class="gallery-img">
+    <img src="images/shoe6.jpg" alt="Gallery 6" class="gallery-img">
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials section">
+  <div class="section-header">
+    <span class="section-label">Reviews</span>
+    <h2 class="section-title">What Runners Say</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Wore the Air Runner in my first 10K — no blisters, no soreness. Absolutely incredible."</p>
+      <div class="reviewer">
+        <div class="avatar">RK</div>
+        <div><strong>Rahul Kumar</strong><br><small>Delhi</small></div>
+      </div>
+    </div>
+    <div class="testimonial-card featured-review">
+      <div class="stars">★★★★★</div>
+      <p>"I've tried every major brand. STRYDE is the only one that actually fits my wide feet without any break-in period."</p>
+      <div class="reviewer">
+        <div class="avatar">PS</div>
+        <div><strong>Priya Sharma</strong><br><small>Mumbai</small></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Street X is legitimately the best looking shoe I've owned. Get so many compliments on every walk."</p>
+      <div class="reviewer">
+        <div class="avatar">AV</div>
+        <div><strong>Arjun Verma</strong><br><small>Bangalore</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about section">
+  <div class="about-inner">
+    <div class="about-media">
+      <video autoplay muted loop playsinline>
+        <source src="video/video5.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="about-text">
+      <span class="section-label">Our Story</span>
+      <h2 class="section-title">Born to Run.<br>Built to Endure.</h2>
+      <p>STRYDE was founded by athletes who were tired of choosing between performance and style. Every shoe we make starts with real runners, real feedback, and a commitment to zero compromises.</p>
+      <p style="margin-top:16px;">From the track to the street, we engineer footwear that keeps up with your life — and looks good doing it.</p>
+      <div class="about-numbers">
+        <div><span>2019</span><small>Founded</small></div>
+        <div><span>28</span><small>Countries</small></div>
+        <div><span>50K+</span><small>Customers</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <h2>Get Early Access & Exclusive Deals</h2>
+    <p>Join 10,000+ runners who receive new launches and member-only offers.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact section">
+  <div class="section-header">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">We're Here For You</h2>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <div>
+          <strong>Email Us</strong>
+          <p>support@stryde.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <strong>Call Us</strong>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <strong>Visit Us</strong>
+          <p>12 Runner's Lane, Hyderabad 500001</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">Twitter</a>
+        <a href="#" class="social-btn">YouTube</a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <select>
+        <option value="">Subject</option>
+        <option>Order Enquiry</option>
+        <option>Returns & Exchange</option>
+        <option>Product Info</option>
+        <option>Other</option>
+      </select>
+      <textarea placeholder="Your message..." rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3 class="logo">STRYDE</h3>
+      <p>Premium performance shoes for every stride of your journey.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#products">All Shoes</a>
+        <a href="#">Running</a>
+        <a href="#">Casual</a>
+        <a href="#">Sport</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Size Guide</a>
+        <a href="#">Returns</a>
+        <a href="#">Shipping</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 STRYDE. All rights reserved.</p>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== CART SIDEBAR ===== -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Your cart is empty.</p>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total">Total: <span id="cartTotal">₹0</span></div>
+    <button class="btn-primary" style="width:100%">Checkout</button>
+  </div>
+</div>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="closeSearch">✕</button>
+  <input type="text" id="searchInput" placeholder="Search shoes…" autocomplete="off">
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<!-- ===== BACK TO TOP ===== -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
